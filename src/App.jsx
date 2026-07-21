@@ -14,17 +14,20 @@ function App() {
     setIsSubmitting(true);
     
     try {
+      const payload = {
+        access_key: import.meta.env.VITE_ACCESS_KEY,
+        email: email,
+        subject: "New Subscription from MyStudyOrbit!",
+      };
+      console.log("Sending payload:", payload);
+
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_ACCESS_KEY,
-          email: email,
-          subject: "New Subscription from MyStudyOrbit!",
-        }),
+        body: JSON.stringify(payload),
       });
       const result = await response.json();
       if (result.success) {
