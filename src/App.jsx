@@ -72,7 +72,7 @@ function App() {
             We're Launching <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-600">Soon!</span>
           </h1>
           <p className="text-slate-500 text-base md:text-lg max-w-xl mx-auto mb-20 md:mb-10 leading-relaxed ">
-           Global online tuition platform dedicated to helping students achieve academic success through personalized one-to-one learning.
+           A global online tuition platform dedicated to helping students achieve academic success through personalized one-to-one learning.
           </p>
         </motion.div>
 
