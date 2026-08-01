@@ -11,7 +11,7 @@ import penImg from "../assets/pen.png";
 import fileImg from "../assets/file.png";
 import book1Img from "../assets/book 1.png";
 import book2Img from "../assets/book 2.png";
-import calender from "../assets/calender.png";
+import calender from "../assets/Calender.png";
 const featuresData = [
   {
     id: 1,
